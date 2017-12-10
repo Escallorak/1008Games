@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>1008Games - Our Games</title>
+  <meta name="author" content="Jenni Singleton">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">  
+  <script defer src="scripts/matchit.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/logo.svg" alt="1008 Games logo"></img></a>
+  </header>
+  <nav>
+    <ul class="main_navbar">
+	  <li><a href="news.html">News</a></li>
+	  <li><a href="about.html">About Us</a></li>
+	  <li><a href="games.html">Games</a></li>
+	  <ul class="secondary_navbar">
+	    <li class="thispage"><a class="thispage" href="ourgames.html">Our Games</a></li>
+	    <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+	</ul>	
+  </nav>
+  <main>
+    <h1>Match It!</h1>
+	<p>Click on the pictures to reveal them. How quickly can you find all the matching pairs?</p>
+	<div>
+	  <p><canvas id="matchit" width="256" height="256"></canvas></p>
+	  <p><input class="button" type="reset" id="gameReset" value="Start"></p>
+	</div>
+  </main>
+  <footer>
+    <p>&copy; 2016 Jenni Singleton</p>
+    <p>CSS Normalize &copy; 2016 Nicholas Gallagher & Jonathan Neal</p>
+  </footer>
+</body>
+
+</html>

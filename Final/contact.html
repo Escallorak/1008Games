@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>1008Games - Contact Us</title>
+  <meta name="author" content="Jenni Singleton">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/logo.svg" alt="1008 Games logo"></img></a>
+  </header>
+  <nav>
+    <ul class="main_navbar">
+	  <li><a href="news.html">News</a></li>
+	  <li><a href="about.html">About Us</a></li>
+	  <ul class="secondary_navbar">
+	    <li><a href="accessibility.html">Accessibility</a></li>
+	    <li><a href="founders.html">Our Founders</a></li>
+	    <li class="thispage"><a class="thispage" href="contact.html">Contact Us</a></li>
+      </ul>
+	  <li><a href="games.html">Games</a></li>
+	</ul>        
+  </nav>
+  <main>
+    <h1>Contact Us</h1>
+	<h3>Address</h3>
+	<p>1008Games Ltd<br>123 Fake Street<br>Somewhere<br>A1 1AA</p>
+	<h3>Telephone</h3>
+	<p>0123456789</p>
+	<h3>Email</h3>
+	<p>Send us your comments here!</p>
+	<form name="comment_form" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+	  <input type="hidden" name="recipient" value="jasingleton1@sheffield.ac.uk">
+	  <table>
+	    <tr>
+		  <td><label for="get_name">Name:</label></td>
+	      <td><input id="get_name" type="text" name="name" maxlength="60" required="required"></td>
+	    </tr>
+	    <tr>
+		  <td><label for="get_age">Age:</label></td>
+	      <td><input id="get_age" type="text" name="age" maxlength="20"></td>
+	    </tr>
+	    <tr>
+		  <td><label for="get_email">Email:</label></td>
+	      <td><input id="get_email" type="email" name="email" maxlength="100" required="required"></td>
+	    </tr>
+	  </table>
+	  <label for="comments">Comments:</label><br>
+	  <textarea name="comments" rows="5" cols="40"></textarea>
+	  <br>
+	  <input class="button" type="submit" value="Send">
+	  <input class="button" type="reset" value="Clear">
+	</form>
+  </main>
+  <footer>
+    <p>&copy; 2016 Jenni Singleton</p>
+    <p>CSS Normalize &copy; 2016 Nicholas Gallagher & Jonathan Neal</p>
+  </footer>
+</body>
+
+</html>

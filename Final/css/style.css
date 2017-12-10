@@ -1,0 +1,177 @@
+body {
+  background-color: #CCCCFF;
+  padding: 0.75em 2%;
+}
+
+header {
+  background-color: #339999;
+  padding: 7px 1% 2px 1%;
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+
+header img {
+  width: 90%;
+  max-width: 500px;
+}
+
+nav {   
+  margin-top: 5px;
+}
+
+nav ul {
+  background-color: #339999;
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 2%;
+}
+
+.main_navbar {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.secondary_navbar {
+  font-size: 80%;
+  font-weight: normal;
+  border: none;
+}
+
+li.thispage {
+  background-color: #FFEEAA;
+}
+
+a.thispage {
+  color: #339999;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFEEAA;
+}
+
+main {
+  margin-bottom: 5%;
+}
+
+form label {
+  margin: 0px 1%;
+}
+
+.button {
+  color: #FFEEAA;
+  background-color: #339999;
+  border: 3px solid gray;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+main img {  
+  border: 1px solid black;  
+}
+
+.imgleft {  
+  float: left;
+  margin: 0 3% 0 0;
+}
+
+.imgright {
+  float: right;
+  margin: 0 0 0 2%;
+}
+
+.no_border {
+  border: none;
+}
+
+.rev_head {
+  display: inline;
+  margin-right: 5px;
+}
+
+figure {
+  width: 80%;
+  margin-left: 2%;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+article {
+  border-top: 1px solid gray;  
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+span {
+	font-size: 0.8em;
+  font-style: oblique;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  font-size: 0.6em;
+  font-style: oblique;
+  clear: both;
+  margin: 2% auto 0px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*when display width reaches 600px, fix the logo size and move the navbar to a vertical layout */
+@media screen and (min-width: 600px) {
+  header img {
+	width: 400px;
+  }
+  nav {
+	width: 150px;
+	background-color: #339999;
+	border: 3px solid gray;
+    border-radius: 10px;
+	float: left;
+	margin-right: 3%;
+  }
+  nav ul {
+	border: none;
+    background-color: none;
+  }
+  nav ul li {
+    display: block;
+  }  
+  main {
+	float: left;
+	max-width: 70%;
+  }
+  figure {
+	width: 50%;
+	float: right;
+  }  
+}
+
+@media screen and (min-width: 800px) {
+  main {
+	max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+	max-width: 80%;
+  }
+}
